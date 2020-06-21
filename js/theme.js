@@ -16,8 +16,9 @@
 		// });
 
 		$('body').vegas({
+			overlay: 'img/overlay.png',
 			 slides: [
-       {   src: '/img/2.jpg',
+       {   src: '/img/1.jpg',
            video: {
                src: [
                    'src/Rustsubao.mp4',
@@ -28,7 +29,7 @@
            }, 
            delay: 11111
        },
-       {   src: '/img/3.jpg',
+       {   src: '/img/2.png',
            video: {
                src: [
                    'src/companionapp_header.mp4',
@@ -52,7 +53,7 @@
 				'day': 		3,
 				'month': 	7,
 				'year': 	2020,
-				'hour': 	0,
+				'hour': 	3,
 				'min': 		0,
 				'sec': 		0
 			},
