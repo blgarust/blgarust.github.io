@@ -31,7 +31,7 @@
        {   src: '/img/3.jpg',
            video: {
                src: [
-                   'src/farming.mp4',
+                   'src/companionapp_header.mp4',
                ],
                loop: true,
                mute: true,
