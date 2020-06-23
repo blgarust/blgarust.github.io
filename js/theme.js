@@ -32,7 +32,7 @@
        {   src: '/img/2.png',
            video: {
                src: [
-                   'src/companionapp_header.mp4',
+                   'src/modularvehicles_x264.mp4',
                ],
                loop: true,
                mute: true,
