@@ -53,7 +53,7 @@
 				'day': 		3,
 				'month': 	7,
 				'year': 	2020,
-				'hour': 	3,
+				'hour': 	2,
 				'min': 		0,
 				'sec': 		0
 			},
