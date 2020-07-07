@@ -2,46 +2,45 @@
 		/* Background Slider
 		/* ------------------------------------------------------------------------ */
 
-		// $('body').vegas({
-		// 	overlay: 'img/overlay.png',
-		//     slides: [
-		//         { src: 'img/1.png' },
-		//         { src: 'img/88.jpg?v=20200408',
-		//         delay: 13000	
-		//          },
-		//          { src: 'img/2.jpg' },
-		//     ],
-		//     transition: 'flash',
-		//     delay: 10000
-		// });
-
 		$('body').vegas({
 			overlay: 'img/overlay.png',
-			 slides: [
-       {   src: '/img/1.jpg',
-           video: {
-               src: [
-                   'src/Rustsubao.mp4',
-               ],
-               loop: false,
-               mute: true,
-                
-           }, 
-           delay: 11111
-       },
-       {   src: '/img/2.png',
-           video: {
-               src: [
-                   'src/modularvehicles_x264.mp4',
-               ],
-               loop: true,
-               mute: true,
-           }, 
-           delay: 999999999
-       },
-   ]
-
+		    slides: [
+		        { src: 'img/1.jpg' },
+		        { src: 'img/2.jpg' },
+		        { src: 'img/3.jpg' },
+		        { src: 'img/4.jpg' },
+		    ],
+		    transition: 'flash',
+		    delay: 10000
 		});
+
+		// $('body').vegas({
+		// 	overlay: 'img/overlay.png',
+		// 	 slides: [
+  //      {   src: '/img/1.jpg',
+  //          video: {
+  //              src: [
+  //                  'src/Rustsubao.mp4',
+  //              ],
+  //              loop: false,
+  //              mute: true,
+                
+  //          }, 
+  //          delay: 11111
+  //      },
+  //      {   src: '/img/2.png',
+  //          video: {
+  //              src: [
+  //                  'src/modularvehicles_x264.mp4',
+  //              ],
+  //              loop: true,
+  //              mute: true,
+  //          }, 
+  //          delay: 999999999
+  //      },
+  //  ]
+
+		// });
 
 
 
@@ -50,7 +49,7 @@
 		/* ------------------------------------------------------------------------ */
 		$('.countdown-container').countDown({
 			targetDate: {
-				'day': 		3,
+				'day': 		10,
 				'month': 	7,
 				'year': 	2020,
 				'hour': 	2,
@@ -130,6 +129,7 @@
             mp3: "src/Rust2.mp3"
           }).jPlayer("play");
           var click = document.ontouchstart === undefined ? 'click' : 'touchstart';
+{
           var kickoff = function () {
             $("#jquery_jplayer_1").jPlayer("play");
             document.documentElement.removeEventListener(click, kickoff, true);
