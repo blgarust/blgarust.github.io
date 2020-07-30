@@ -2,45 +2,45 @@
 		/* Background Slider
 		/* ------------------------------------------------------------------------ */
 
-		$('body').vegas({
-			overlay: 'img/overlay.png',
-		    slides: [
-		        { src: 'img/1.jpg' },
-		        { src: 'img/2.jpg' },
-		        { src: 'img/3.jpg' },
-		        { src: 'img/4.jpg' },
-		    ],
-		    transition: 'flash',
-		    delay: 10000
-		});
-
 		// $('body').vegas({
 		// 	overlay: 'img/overlay.png',
-		// 	 slides: [
-  //      {   src: '/img/1.jpg',
-  //          video: {
-  //              src: [
-  //                  'src/Rustsubao.mp4',
-  //              ],
-  //              loop: false,
-  //              mute: true,
-                
-  //          }, 
-  //          delay: 11111
-  //      },
-  //      {   src: '/img/2.png',
-  //          video: {
-  //              src: [
-  //                  'src/modularvehicles_x264.mp4',
-  //              ],
-  //              loop: true,
-  //              mute: true,
-  //          }, 
-  //          delay: 999999999
-  //      },
-  //  ]
-
+		//     slides: [
+		//         { src: 'img/1.jpg' },
+		//         { src: 'img/2.jpg' },
+		//         { src: 'img/3.jpg' },
+		//         { src: 'img/4.jpg' },
+		//     ],
+		//     transition: 'flash',
+		//     delay: 10000
 		// });
+
+		$('body').vegas({
+			overlay: 'img/overlay.png',
+			 slides: [
+       {   src: '/img/1.jpg',
+           video: {
+               src: [
+                   'src/Rustsubao.mp4',
+               ],
+               loop: false,
+               mute: true,
+                
+           }, 
+           delay: 11111
+       },
+       {   src: '/img/2.jpg',
+           video: {
+               src: [
+                   'src/modularvehicles_x264.mp4',
+               ],
+               loop: true,
+               mute: true,
+           }, 
+           delay: 999999999
+       },
+   ]
+
+		});
 
 
 
@@ -49,8 +49,8 @@
 		/* ------------------------------------------------------------------------ */
 		$('.countdown-container').countDown({
 			targetDate: {
-				'day': 		10,
-				'month': 	7,
+				'day': 		7,
+				'month': 	8,
 				'year': 	2020,
 				'hour': 	2,
 				'min': 		0,
