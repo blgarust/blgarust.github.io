@@ -31,7 +31,7 @@
        {   src: '/img/2.jpg',
            video: {
                src: [
-                   'src/modularvehicles_x264.mp4',
+                   'src/swamp.mp4',
                ],
                loop: true,
                mute: true,
