@@ -103,8 +103,8 @@
         <!-- <div class="code-title"></div>
         <div class="code-area">
             <img id="wechat-url" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==">
-        </div>-->
-        <!-- <div class="code-footer">请长按二维码后点击[识别图中二维码]来进行付款</div>  -->
+        </div>
+        <div class="code-footer">请长按二维码后点击[识别图中二维码]来进行付款</div>  -->
         <div class="code-footer">请使用QQ/支付宝付款</div> 
     </div>
     
@@ -117,9 +117,9 @@
         document.getElementById("wechat-url").src = setting.qrcodeApi + urlEncode(setting.wechatUrl);
         document.getElementById("code-wechat").style.display = "block";
     } else if(navigator.userAgent.match(/QQ\//i)) {
-    	window.location.href = setting.qqUrl; 
-        // document.getElementById("qq-url").src = setting.qrcodeApi + urlEncode(setting.qqUrl);
-        // document.getElementById("code-qq").style.display = "block";
+
+        document.getElementById("qq-url").src = setting.qrcodeApi + urlEncode(setting.qqUrl);
+        document.getElementById("code-qq").style.display = "block";
     } else {
 
         document.getElementById("page-url").src = setting.qrcodeApi + urlEncode(window.location.href);
