@@ -28,13 +28,13 @@
                                             singer:'Rust原声带',
                                             url:'http://playrust.xyz/src/boat-shop-music-loop.mp3',
                                             img_url:'http://playrust.xyz/img/Rust_Marque-1080.png',
-                                        },
-                                        {
-                                            name:'飞行盛宴',
-                                            singer:'Rust原声带',
-                                            url:'http://playrust.xyz/src/air-wolf-music-loop.mp3',
-                                            img_url:'http://playrust.xyz/img/Rust_Marque-1080.png',
-                                        }
+                                        } // ,
+                                        // {
+                                        //     name:'飞行盛宴',
+                                        //     singer:'Rust原声带',
+                                        //     url:'http://playrust.xyz/src/air-wolf-music-loop.mp3',
+                                        //     img_url:'http://playrust.xyz/img/Rust_Marque-1080.png',
+                                        // }
                                     ],
 
             //进度信息
