@@ -23,6 +23,8 @@
 		<link rel="stylesheet" href="css/animate.min.css">
 		<link rel="stylesheet" href="css/font-awesome.min.css"> <!-- 图标 -->
 		<link rel="stylesheet" href="css/vegas.min.css"> 
+		<link rel="stylesheet" href="css/music.css">
+		<link rel="stylesheet" href="fonts/fontCss.css">
 
 
 		<!-- 主题 CSS -->
@@ -186,7 +188,9 @@
 		<footer>
 			<div class="container">
 				<div class="row">
-
+					<div class="music-bg" style="height: 100%;filter: blur(100px);transition:all 0.3s" id="music-bg">
+					<div class="music-mask"></div>
+					</div>
 					<div class="col-xs-12">
 						<p class="wow bounceIn" style="font-size:8px;" data-wow-delay="0.9s">- 本页面仅限 北京时区（GMT+8） 的地区访问 -</p>
 						<p class="wow bounceIn" style="font-size:8px;" data-wow-delay="0.9s">- 建议使用Ctrl+F5快捷键刷新页面 -</p>
@@ -219,7 +223,36 @@
     s.parentNode.insertBefore(bp, s);
 })();
 	</script>
+<script type="text/javascript">
+window.onload = function(){
+	MC.music({
+		hasAjax:false,
+		left:'93%',
+		bottom:'5%',
+		musicChanged:function(ret){
+			// alert(ret.url);
+			// getMusic_buffer(ret.url);
+			// return;
+			var data = ret.data;
+			var index = ret.index;
+			var imageUrl = data[index].img_url;
+			
+			var music_bg = document.getElementById('music-bg');
+			music_bg.style.background = 'url('+imageUrl+')no-repeat';
+			music_bg.style.backgroundSize = 'cover';
+			music_bg.style.backgroundPosition = 'center 30%';
+		},
 
+		getMusicInfo:function(data){
+			
+		},
+
+		musicPlayByWebAudio:function(ret){
+			
+		},
+	});
+}
+</script>
 
 		
 		<script src="js/jquery-2.1.4.min.js"></script>
@@ -228,6 +261,7 @@
 		<script src="js/jquery.jplayer.min.js"></script>
 		<script src="js/vegas.min.js"></script>
 		<script src="js/theme.js"></script>
+		<script src="js/music.js"></script>
 
 
 	</body>
