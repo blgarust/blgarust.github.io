@@ -1,5 +1,5 @@
 		/* ------------------------------------------------------------------------ */
-		/* Background Slider
+		/* 背景循环
 		/* ------------------------------------------------------------------------ */
 
 		// $('body').vegas({
@@ -31,7 +31,7 @@
        {   src: '/img/2.jpg',
            video: {
                src: [
-                   'src/swamp.mp4',
+                   'src/boatvillage1.mp4',
                ],
                loop: true,
                mute: true,
@@ -45,12 +45,12 @@
 
 
 		/* ------------------------------------------------------------------------ */
-		/* Count Down Timer
+		/* 倒计时
 		/* ------------------------------------------------------------------------ */
 		$('.countdown-container').countDown({
 			targetDate: {
 				'day': 		7,
-				'month': 	8,
+				'month': 	5,
 				'year': 	2020,
 				'hour': 	2,
 				'min': 		0,
@@ -60,73 +60,13 @@
 		});
 				
 
-
 		/* ------------------------------------------------------------------------ */
-		/* AJAX SUBSCRIBE UPDATED
-		/* ------------------------------------------------------------------------ 
-		var formRegister;	
-		jQuery(function() {
-		
-			// Get the form.
-			var form = jQuery('#subscribe_form');	
-			
-			// Get the messages div.
-			formRegister = jQuery('#form-subscriber');
-		
-			// Set up an event listener for the contact form.
-			form.submit(function(e) {
-				// Stop the browser from submitting the form.
-				e.preventDefault();
-		
-				// Serialize the form data.
-				var formData = form.serialize();
-		
-				// Submit the form using AJAX.
-				jQuery.ajax({
-					type: 'POST',
-					url: form.attr('action'),
-					data: formData
-				})
-				.done(function(response) {
-					// Make sure that the formRegister div has the 'success' class.
-					formRegister.removeClass('error');
-					formRegister.addClass('success');
-					
-					// Set the message text.
-					formRegister.text(response);
-
-					form[0].reset();
-					// remove the message.
-					setTimeout(function() { formRegister.empty().removeClass('success'); },5000);
-								
-					
-				})
-				.fail(function(data) {
-					// Make sure that the formRegister div has the 'error' class.
-					formRegister.removeClass('success');
-					formRegister.addClass('error');
-		
-					// Set the message text.
-					if (data.responseText !== '') {
-						formRegister.text(data.responseText);
-						
-					} else {
-						formRegister.text('Oops! An error occured and your message could not be sent.');
-					}
-				});
-		
-			});
-		
-		});
-*/
-
+		/* 音频
 		/* ------------------------------------------------------------------------ */
-		/* Audio
-		/* ------------------------------------------------------------------------ 
 		$("#jquery_jplayer_1").jPlayer({
         ready: function() {
           $(this).jPlayer("setMedia", {
-            mp3: "src/Rust2.mp3"
+            mp3: "src/boat-shop-music-loop.wav"
           }).jPlayer("play");
           var click = document.ontouchstart === undefined ? 'click' : 'touchstart';
 {
@@ -139,10 +79,10 @@
         swfPath: "/js",
         loop: true,
         });
-*/
+
 
 		/* ------------------------------------------------------------------------ */
-		/* PageLoader
+		/* 页面加载
 		/* ------------------------------------------------------------------------ */
         // Wait for window load
 		$(window).load(function() {
