@@ -10,7 +10,7 @@
             width:                  260,                        //宽度
             height:                 56,                         //高度
             hasBlur:                true,                       //是否显示模糊效果
-            blur:                   8,                          //模糊的数值
+            blur:                   5,                          //模糊的数值
             left:                   'auto',                     //音乐的位置 :left
             right:                  'auto',                     //音乐的位置 :right
             bottom:                 'auto',                     //音乐的位置 :bottom
@@ -38,7 +38,7 @@
                                     ],
 
             //进度信息
-            durationBg:             'rgba(255,255,255,0)',
+            durationBg:             'rgba(255,255,255,0.8)',
 
             // 线性渐变的颜色
             progressBg:             [{
