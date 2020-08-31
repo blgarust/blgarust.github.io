@@ -43,14 +43,13 @@
 		});
 
 
-
 		/* ------------------------------------------------------------------------ */
 		/* 倒计时
 		/* ------------------------------------------------------------------------ */
 		$('.countdown-container').countDown({
 			targetDate: {
-				'day': 		7,
-				'month': 	5,
+				'day': 		5,
+				'month': 	9,
 				'year': 	2020,
 				'hour': 	2,
 				'min': 		0,
@@ -58,18 +57,17 @@
 			},
 			omitWeeks: true
 		});
-				
+
 
 		/* ------------------------------------------------------------------------ */
-		/* 音频
+		/* 音乐
 		/* ------------------------------------------------------------------------ */
 		$("#jquery_jplayer_1").jPlayer({
         ready: function() {
           $(this).jPlayer("setMedia", {
-            mp3: "src/boat-shop-music-loop.wav"
+            mp3: "http://playrust.xyz/src/boat-shop-music-loop.mp3"
           }).jPlayer("play");
           var click = document.ontouchstart === undefined ? 'click' : 'touchstart';
-{
           var kickoff = function () {
             $("#jquery_jplayer_1").jPlayer("play");
             document.documentElement.removeEventListener(click, kickoff, true);
