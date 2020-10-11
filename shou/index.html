@@ -115,8 +115,8 @@
         window.location.href = setting.aliUrl; 
     } else if(navigator.userAgent.match(/MicroMessenger\//i)) {
 
-        // document.getElementById("wechat-url").src = setting.qrcodeApi + urlEncode(setting.wechatUrl);
-        document.getElementById("code-wechat").style.display = "block";
+         document.getElementById("wechat-url").src = setting.qrcodeApi + urlEncode(setting.wechatUrl);
+         document.getElementById("code-wechat").style.display = "block";
     } else if(navigator.userAgent.match(/QQ\//i)) {
 
         document.getElementById("qq-url").src = setting.qrcodeApi + urlEncode(setting.qqUrl);
