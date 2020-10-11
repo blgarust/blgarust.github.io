@@ -51,7 +51,7 @@
     }
     .code-area>img {
         margin: 80px 0;
-        width: 60%;
+        width: 75%;
         min-width: 100px;
     }
     .code-footer {
@@ -91,7 +91,7 @@
         <div class="code-area">
             <img id="page-url" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==">
         </div>
-        <div class="code-footer">请使用手机QQ/微信/支付宝扫描二维码</div>
+        <div class="code-footer">请使用微信/支付宝扫描二维码</div>
     </div>
     <div class="code-item" id="code-qq">
         <div class="code-title"></div>
@@ -117,10 +117,10 @@
 
          document.getElementById("wechat-url").src = setting.qrcodeApi + urlEncode(setting.wechatUrl);
          document.getElementById("code-wechat").style.display = "block";
-    } else if(navigator.userAgent.match(/QQ\//i)) {
+    // } else if(navigator.userAgent.match(/QQ\//i)) {
 
-        document.getElementById("qq-url").src = setting.qrcodeApi + urlEncode(setting.qqUrl);
-        document.getElementById("code-qq").style.display = "block";
+    //     document.getElementById("qq-url").src = setting.qrcodeApi + urlEncode(setting.qqUrl);
+    //     document.getElementById("code-qq").style.display = "block";
     } else {
 
         document.getElementById("page-url").src = setting.qrcodeApi + urlEncode(window.location.href);
