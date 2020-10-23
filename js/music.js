@@ -26,7 +26,7 @@
                                         {
                                             name:'惬意渔乡',
                                             singer:'Rust原声带',
-                                            url:'http://playrust.xyz/src/boat-shop-music-loop.mp3',
+                                            url:'http://server.blga.cc:81/blga/boat-shop-music-loop.mp3',
                                             img_url:'http://playrust.xyz/img/Rust_Marque-1080.png',
                                         } // ,
                                         // {

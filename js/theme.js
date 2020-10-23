@@ -20,7 +20,7 @@
        {   src: '/img/1.jpg',
            video: {
                src: [
-                   'src/Rustsubao.mp4',
+                   'http://server.blga.cc:81/blga/Rustsubao.mp4',
                ],
                loop: false,
                mute: true,
@@ -31,7 +31,7 @@
        {   src: '/img/2.jpg',
            video: {
                src: [
-                   'src/boatvillage1.mp4',
+                   'http://server.blga.cc:81/blga/skullspikes.mp4',
                ],
                loop: true,
                mute: true,
@@ -48,10 +48,10 @@
 		/* ------------------------------------------------------------------------ */
 		$('.countdown-container').countDown({
 			targetDate: {
-				'day': 		4,
-				'month': 	9,
+				'day': 		27,
+				'month': 	10,
 				'year': 	2020,
-				'hour': 	2,
+				'hour': 	3,
 				'min': 		0,
 				'sec': 		0
 			},
