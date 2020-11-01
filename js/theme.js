@@ -48,8 +48,8 @@
 		/* ------------------------------------------------------------------------ */
 		$('.countdown-container').countDown({
 			targetDate: {
-				'day': 		27,
-				'month': 	10,
+				'day': 		6,
+				'month': 	11,
 				'year': 	2020,
 				'hour': 	3,
 				'min': 		0,
