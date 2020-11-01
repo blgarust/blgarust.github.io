@@ -31,7 +31,7 @@
        {   src: '/img/2.jpg',
            video: {
                src: [
-                   'http://server.blga.cc:81/blga/skullspikes.mp4',
+                   'http://server.blga.cc:81/blga/horse.mp4',
                ],
                loop: true,
                mute: true,

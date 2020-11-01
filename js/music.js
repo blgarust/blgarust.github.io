@@ -24,9 +24,9 @@
             musicType:              ['Rust'],         //音乐的类型  （需要随机显示）这是结合我自己后台数据库使用的 如果不是用ajax请求是不会显示这个类型的;
             source:                 [
                                         {
-                                            name:'惬意渔乡',
+                                            name:'西部狂徒',
                                             singer:'Rust原声带',
-                                            url:'http://server.blga.cc:81/blga/boat-shop-music-loop.mp3',
+                                            url:'http://server.blga.cc:81/blga/stable-music-loop.wav',
                                             img_url:'http://playrust.xyz/img/Rust_Marque-1080.png',
                                         } // ,
                                         // {
