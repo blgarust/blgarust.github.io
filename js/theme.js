@@ -17,7 +17,7 @@
 		$('body').vegas({
 			overlay: 'img/overlay.png',
 			 slides: [
-       {   src: '/img/1.jpg',
+       {   src: '/img/1.png',
            video: {
                src: [
                    'http://server.blga.cc:81/blga/Rustsubao.mp4',
@@ -31,7 +31,7 @@
        {   src: '/img/2.jpg',
            video: {
                src: [
-                   'http://server.blga.cc:81/blga/horse.mp4',
+                   'http://server.blga.cc:81/blga/stables.mp4',
                ],
                loop: true,
                mute: true,
