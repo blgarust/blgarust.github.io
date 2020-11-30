@@ -31,7 +31,7 @@
        {   src: '/img/2.jpg',
            video: {
                src: [
-                   'http://server.blga.cc:81/blga/twitchdrops_hero.mp4',
+                   'http://server.blga.cc:81/blga/oilrig.mp4',
                ],
                loop: true,
                mute: true,
