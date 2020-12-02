@@ -31,7 +31,7 @@
        {   src: '/img/2.jpg',
            video: {
                src: [
-                   'http://server.blga.cc:81/blga/oilrig.mp4',
+                   'http://server.blga.cc:81/blga/rust_bgvideo_website_003_noaudio.mp4',
                ],
                loop: true,
                mute: true,
