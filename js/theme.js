@@ -31,7 +31,7 @@
        {   src: '/img/2.jpg',
            video: {
                src: [
-                   'http://server.blga.cc:81/blga/rust_bgvideo_website_003_noaudio.mp4',
+                   'http://server.blga.cc:81/blga/xmas_sled.mp4',
                ],
                loop: true,
                mute: true,
@@ -48,7 +48,7 @@
 		/* ------------------------------------------------------------------------ */
 		$('.countdown-container').countDown({
 			targetDate: {
-				'day': 		4,
+				'day': 		18,
 				'month': 	12,
 				'year': 	2020,
 				'hour': 	3,
