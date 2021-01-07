@@ -48,9 +48,9 @@
 		/* ------------------------------------------------------------------------ */
 		$('.countdown-container').countDown({
 			targetDate: {
-				'day': 		18,
-				'month': 	12,
-				'year': 	2020,
+				'day': 		8,
+				'month': 	1,
+				'year': 	2021,
 				'hour': 	3,
 				'min': 		0,
 				'sec': 		0
