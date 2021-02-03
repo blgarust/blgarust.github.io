@@ -31,7 +31,7 @@
        {   src: '/img/2.jpg',
            video: {
                src: [
-                   'http://server.blga.cc:81/blga/xmas_sled.mp4',
+                   'http://server.blga.cc:81/blga/hero_twitchdrops_round4_enabled.mp4',
                ],
                loop: true,
                mute: true,
