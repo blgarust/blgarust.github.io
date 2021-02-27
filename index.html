@@ -1,313 +1,54 @@
 <!doctype html>
 <html>
-	<head>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>404</title>
+<style>
+	body{
+		background-color:#cd412b;
+		font-size:14px;
+	}
+	h3{
+		font-size:60px;
+		color:#eee;
+		text-align:center;
+		padding-top:30px;
+		padding: 100px 0px 0px 0px;
+		margin: 0px;
+	}
+	h5{
+		padding: 0px;
+		margin: 0px;
+		font-size:20px;
+		color:#eee;
+		text-align:center;
+		font-weight:normal;
+	}
+	p{
+		font-size:30px;
+		color:#eee;
+		text-align:center;
+		padding-top:0px;
+		font-weight:normal;
+	}
+	a{
+		color:#eee;
+		text-decoration: none;
+	}
+	a:hover{
+		background:#eee;
+		color: #cd412b;
+		transition: all 1s;
+	}
+</style>
+</head>
 
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<title>RUST更新倒计时</title>
-		<meta name="description" content="Rust更新倒计时 - 微信公众号：Rust速报">
-		<meta name="keywords" content="RUST,Rust速报,游戏,Rust更新,Rust清档,Rust什么时候更新,Rust什么时候清档,Rust清档日期,Rust Wipe,Rust更新日期,Rust更新倒计时" />
-		<meta name="author" content="Rust速报">
-
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-
-<!-- 		<link href='http://fonts.useso.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css'> 
-		<link href='http://fonts.useso.com/css?family=Open+Sans:300italic,600italic,400,600,700' rel='stylesheet' type='text/css'>  -->
-
-		<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
-		<meta http-equiv="Pragma" content="no-cache" />
-		<meta http-equiv="Expires" content="0" />
-
-		<!-- 插件 CSS -->
-		<link rel="stylesheet" href="css/bootstrap.min.css">
-		<link rel="stylesheet" href="css/animate.min.css">
-		<link rel="stylesheet" href="css/font-awesome.min.css"> <!-- 图标 -->
-		<link rel="stylesheet" href="css/vegas.min.css"> 
-		<link rel="stylesheet" href="css/music.css">
-		<link rel="stylesheet" href="fonts/fontCss.css">
-
-
-		<!-- 主题 CSS -->
-        <link rel="stylesheet" href="css/reset.css">
-		<link rel="stylesheet" href="css/style.css">
-		<link rel="stylesheet" href="css/mobile.css">
-
-		<script src="js/jquery.min.js"></script>
-		<script src="js/popper.min.js"></script>
-		<script src="js/bootstrap.min.js"></script>
-
-		 <style>
-		  /* Make the image fully responsive */
-		  .carousel-inner img {
-		      width: 100%;
-		      height: 100%;
-		  }
-		 </style>
-		
-		<!-- 百度统计 -->
-		<script>
-			var _hmt = _hmt || [];
-			(function() {
-			  var hm = document.createElement("script");
-			  hm.src = "https://hm.baidu.com/hm.js?518b67dd6132275bead1ef6346fed26a";
-			  var s = document.getElementsByTagName("script")[0]; 
-			  s.parentNode.insertBefore(hm, s);
-			})();
-		</script>
-
-
-
-	</head>
-
-	<body>
-		<div class="page-loader"></div>  
-
-		<header>
-			<div class="container">
-				<div class="row">
-
-					<div class="col-sm-6">
-						<!-- <div class="logo wow bounceInLeft" data-wow-delay="0.4s">
-							<a class="site-logo" href="#">RustUpdate</a> -->
-													<!-- 轮播 -->
-						<div id="demo" class="carousel slide wow zoomIn" data-wow-delay="0.3s" data-ride="carousel">
-							  <!-- 指示符 -->
-						  <ul class="carousel-indicators">
-						    <li data-target="#demo" data-slide-to="0" class="active"></li>
-						    <li data-target="#demo" data-slide-to="1"></li>
-						    <li data-target="#demo" data-slide-to="2"></li>
-						  </ul>
-						 
-						  <!-- 轮播图片 -->
-						  <div class="carousel-inner" style="height: 80px;width: 353px;">
-						    <div class="carousel-item active">
-						      <img src="http://server.blga.cc:81/blga/ad-logo.png">
-						    </div>
-						    <div class="carousel-item">
-						      <a href="http://gm.blga.cc:88/timer-about/ad/ad1.html" target="_blank">
-						      <img src="http://server.blga.cc:81/blga/ad-0.png" alt="广告" >
-						      </a>
-						    </div>
-						    <div class="carousel-item">
-						      <a href="http://gm.blga.cc:88/timer-about/ad/ad2.html" target="_blank">
-						      <img src="http://server.blga.cc:81/blga/ad-1.png" alt="广告">
-						      </a>
-						    </div>
-						  </div>
-						 </div>
-					</div>
-
-					<div class="col-sm-6">
-						<ul class="contact-list wow bounceInRight" data-wow-delay="0.4s">
-                            <li><i class="fa fa-wechat"></i> <a  href="./qr">Rust速报（公众号）</a></li>
-                            <li><i class="fa fa-qq"></i><a href="https://jq.qq.com/?_wv=1027&k=5jW4M6B" target="_blank"> 978171279（QQ群）</a></li>
-                            <li><i class="fa fa-info-circle"></i><a href="http://gm.blga.cc:88/timer-about/"> 关于 Rust更新倒计时 </a></li>
-                        </ul>
-					</div>
-
-				</div> 
-			</div> 
-		</header>
-
-		<section>
-			<div class="container">
-				<div class="row">
-
-					<div class="col-xs-12">
-
-
-	            		<div class="countdown-container" id="lwt-countdown">
-	            			<div class="dash days_dash wow zoomIn" data-wow-delay="0.4s">
-	            		   	    <!-- <div class="digit">0</div> --><div class="digit">0</div><div class="digit">0</div>
-	        			   	    <span class="dash_title">天</span>
-							</div>
-	            			<div class="dash hours_dash wow zoomIn" data-wow-delay="0.5s">
-	            		   	    <div class="digit">0</div><div class="digit">0</div>
-	        			   	    <span class="dash_title">时</span>
-							</div>
-	            		   	<div class="dash minutes_dash wow zoomIn" data-wow-delay="0.6s">
-	            		   	    <div class="digit">0</div><div class="digit">0</div>
-	        			   	    <span class="dash_title">分</span>
-							</div>
-							<div class="dash seconds_dash wow zoomIn" data-wow-delay="0.7s">
-	            		        <div class="digit">0</div><div class="digit">0</div>
-	        			   	    <span class="dash_title">秒</span>
-							</div>
-	            		</div>
-	            		
-            		</div>
-            		
-				</div>
-			</div>
-		</section>
-		
-		<section id="content">
-			<div class="container">
-				<div class="row">
-
-					<div class="col-md-6">
-						<div class="content-intro">
-							<h1 class="wow zoomInLeft" data-wow-delay="0.3s">祝各位<span class="main-color">新年快乐</span>！</h1>
-							<!-- <h5 class="wow zoomInLeft" data-wow-delay="0.3s">我们已于北京时间 <span class="rust-color">2020年4月10日凌晨1:57分</span> 发布强制性客户/服务端更新，请各位玩家和服主注意。</h5> -->
-							<p class="wow zoomIn" data-wow-delay="0.5s">
-								本页面为Rust的更新倒计时，但不代表为最终更新时间随时都有可能会更改。<br>
-								游戏发布更新即代表服务器会清档，游戏服务端的部分数据会被强制清空。
-							</p>
-							<!-- <h3 class="wow zoomIn" data-wow-delay="0.5s">本次更新不会强制清除任何玩家数据。</h3> -->
-							<br>
-							<div>
-								<h4 class="main-color wow zoomInLeft" data-wow-delay="0.7s">
-								本次更新内容：
-							</h4>
-							<ol class="wow zoomInLeft" data-wow-delay="0.7s">
-								<li class="wow zoomInLeft" data-wow-delay="0.8s">
-									1.送货无人机来啦，这就是2077年的购物吗？（.
-								</li>
-								<li class="wow zoomInLeft" data-wow-delay="0.85s">
-									2.各种游戏模式即将到来，萌新们的福音来啦！.
-								</li>
-								<li class="wow zoomInLeft" data-wow-delay="0.9s">
-									3.服务器标签设置，寻找需要的服务器不再困难.
-								</li>
-								<li class="wow zoomInLeft" data-wow-delay="0.95s">
-									4.重做后的Hapis岛，不再面临被抛弃的风险了.
-								</li>
-								</li>
-							</ol>
-							</div>
-							<div>
-								<br>
-							<h5 class="wow zoomIn" data-wow-delay="1.5s">
-								更新日期：2021年02月05日凌晨03时00分 <br>
-								2021年全部更新发布日期请关注微信公众号：<span class="main-color">RUST速报</span> ，发送 <span class="main-color">更新</span> 获取.
-							</h5>
-							<!-- <p class="wow zoomIn" data-wow-delay="1.5s">(移动端请在右上角分享)</p> -->
-							<br>
-<!-- 	                    	<ul class="social-list">
-	                    		<li class="wow zoomIn" data-wow-delay="1.55s"><a href="http://u.blga.cc/wshareqq" target="_blank" title="分享到QQ群或好友"><i class="fa fa-qq"></i></a></li>
-
-								<li class="wow zoomIn" data-wow-delay="1.65s"><a href="http://u.blga.cc/wshareqzone" target="_blank" title="分享到QQ空间"><i class="fa fa-star"></i></a></li>
-
-	                    		<li class="wow zoomIn" data-wow-delay="1.75s"><a href="http://u.blga.cc/wshareweibo" target="_blank" title="分享到新浪微博"><i class="fa fa-weibo"></i></a></li>
-
-	                    	 	<li class="wow zoomIn" data-wow-delay="1.75s"><a href="https://twitter.com/intent/tweet?text=Rust update countdown is here →&url=http%3A%2F%2Fwipe.blga.cc%3A88%2F&related=Rustsubao" target="_blank"><i class="fa fa-twitter"></i></a></li> 
-	                    	</ul> -->
-	                    	</div>
-						</div>
-					</div>
-
-					<div class="col-md-6">
-						<div class="service-post wow fadeInUp" data-wow-delay="0.5s">
-							<i class="fa fa-server"></i>
-							<h2><span class="main-color">服务端</span> 更新</h2>
-							<p>服务端更新未发布.</p>
-						</div>
-
-						<div class="service-post wow fadeInUp" data-wow-delay="0.7s">
-							<i class="fa fa-gamepad"></i>
-							<h2><span class="main-color">客户端</span> 更新</h2>
-							<p>客户端更新未发布.</p>
-						</div>
-
-						<div class="service-post wow fadeInUp" data-wow-delay="0.9s">
-							<i class="fa fa-rss-square"></i>
-							<h2><span class="main-color">公众号</span> 更新</h2>
-							<p>本次更新内容文章未发布<!-- （<a href="https://mp.weixin.qq.com/s/1sdnT4MXj4MOl_TdUtqdGw">单击此处查看</a>） -->.</p>
-						</div>
-					</div>
-				</div>
-			</div> 
-		</section>
-
-<!-- 		<section>
-			<div class="container">
-				<div class="row">
-
-					<div class="col-xs-12">
-
-
-
-            		</div>
-            		
-				</div>
-			</div>
-		</section> -->
-		<footer>
-			<div class="container">
-				<div class="row">
-<!-- 					<div class="music-bg" style="height: 100%;filter: blur(100px);transition:all 0.3s" id="music-bg">
-					<div class="music-mask"></div>
-					</div> -->
-					<div class="col-md-12">
-						<p class="wow bounceIn" data-wow-delay="0.7s">Copyright &copy; Rust News. All rights reserved </p>
-						<p class="wow bounceIn" style="font-size:8px;" data-wow-delay="0.9s">- 建议使用Shift+F5快捷键刷新页面 -</p>
-					</div>
-
-
-				
-
-				</div> 
-			</div> 
-		</footer>
-		
-
-
-		<!-- <div id="jquery_jplayer_1"></div>  -->
-	
-		<script>
-		(function(){
-		    var bp = document.createElement('script');
-		    var curProtocol = window.location.protocol.split(':')[0];
-		    if (curProtocol === 'https') {
-		        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
-		    }
-		    else {
-		        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
-		    }
-		    var s = document.getElementsByTagName("script")[0];
-		    s.parentNode.insertBefore(bp, s);
-		})();
-		</script>
-<!-- 		<script type="text/javascript">
-		window.onload = function(){
-			MC.music({
-				hasAjax:false,
-				left:'93%',
-				bottom:'5%',
-				musicChanged:function(ret){
-					// alert(ret.url);
-					// getMusic_buffer(ret.url);
-					// return;
-					var data = ret.data;
-					var index = ret.index;
-					var imageUrl = data[index].img_url;
-					
-					var music_bg = document.getElementById('music-bg');
-					music_bg.style.background = 'url('+imageUrl+')no-repeat';
-					music_bg.style.backgroundSize = 'cover';
-					music_bg.style.backgroundPosition = 'center 30%';
-				},
-
-				getMusicInfo:function(data){
-					
-				},
-
-				musicPlayByWebAudio:function(ret){
-					
-				},
-			});
-		}
-		</script> -->
-
-		
-		<script src="js/jquery-2.1.4.min.js"></script>
-		<script src="js/wow.min.js"></script>
-		<script src="js/jquery.lwtCountdown-1.0.js"></script>
-		<script src="js/jquery.jplayer.min.js"></script>
-		<script src="js/vegas.min.js"></script>
-		<script src="js/theme.js"></script>
-		//<script src="js/music.js"></script>
-
-
-	</body>
+<body>
+<h3>该页面暂停提供</h3>
+<h5>非常抱歉给您带来不便</h5>
+<p>微信公众号：Rust速报</p>
+<p><a href="https://jq.qq.com/?_wv=1027&k=5jW4M6B">->QQ群：978171279<-</a></p>
+</body>
 </html>
