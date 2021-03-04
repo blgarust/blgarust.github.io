@@ -1,0 +1,68 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    color: #fff;
+}
+body{
+    background: #222222;
+    margin: 30px;
+}
+.title{
+    padding: 5px;
+    color: #cd412b;
+    font-size: 35px;
+    text-align: center;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px #FFFFFF;
+}
+.title p{
+    font-weight: normal;
+    font-size: 14px;
+    color: #D3D3D3;
+    text-shadow: 2px 2px 3px #cd412b;
+}
+.title p b{
+    font-weight: bold;
+    font-size: 14px;
+    color: #DCDCDC;
+}
+.t-title-5{
+    background: #cd412b;
+    color: #fff;
+    width: auto;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 5px 0px;
+    border-left: 20px solid #cd412b;
+    border-bottom: 5px solid #222222;
+}
+.zhubo-block{
+    width: 100%;
+    margin: 5px;
+}
+.zhubo-info-img {
+    width: 50px;
+    height: 50px;
+}
+.zhubo-block{
+    border: 2px solid #cd412b;
+}
+.zhubo-skin{
+    border-top: 2px solid #cd412b;
+}
+div div > a{
+    color: #cd412b;
+    font-weight: bold;
+}
+div div > a:hover{
+    background: #cd412b;
+    color: #fff;
+    font-weight: bold;
+    transition: all .5s;
+}
+.zhubo-skin-img{
+    width: 100%;
+}
